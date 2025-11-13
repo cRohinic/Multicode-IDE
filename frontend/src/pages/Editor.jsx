@@ -113,7 +113,7 @@ const Editor = () => {
       return extensions[lang] || '';
     };
 
-    fetch("https://emkc.org/api/v2/piston/execute", {
+    fetch("/piston/execute", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
